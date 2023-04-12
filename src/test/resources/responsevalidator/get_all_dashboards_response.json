@@ -1,0 +1,1359 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "zoom": {
+                          "type": "boolean"
+                        },
+                        "timeline": {
+                          "type": "string"
+                        },
+                        "viewMode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "zoom",
+                        "timeline",
+                        "viewMode"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "zoom": {
+                          "type": "boolean"
+                        },
+                        "timeline": {
+                          "type": "string"
+                        },
+                        "viewMode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "zoom",
+                        "timeline",
+                        "viewMode"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "timeline": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "timeline"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "latest": {
+                          "type": "boolean"
+                        },
+                        "viewMode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "latest",
+                        "viewMode"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "latest": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "latest"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "latest": {
+                          "type": "boolean"
+                        },
+                        "viewMode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "latest",
+                        "viewMode"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "includeMethods": {
+                          "type": "boolean"
+                        },
+                        "launchNameFilter": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "includeMethods",
+                        "launchNameFilter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "viewMode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "viewMode"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "widgetName": {
+                      "type": "string"
+                    },
+                    "widgetId": {
+                      "type": "integer"
+                    },
+                    "widgetType": {
+                      "type": "string"
+                    },
+                    "widgetSize": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "width",
+                        "height"
+                      ]
+                    },
+                    "widgetPosition": {
+                      "type": "object",
+                      "properties": {
+                        "positionX": {
+                          "type": "integer"
+                        },
+                        "positionY": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "positionX",
+                        "positionY"
+                      ]
+                    },
+                    "share": {
+                      "type": "boolean"
+                    },
+                    "widgetOptions": {
+                      "type": "object",
+                      "properties": {
+                        "includeMethods": {
+                          "type": "boolean"
+                        },
+                        "launchNameFilter": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "includeMethods",
+                        "launchNameFilter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "widgetName",
+                    "widgetId",
+                    "widgetType",
+                    "widgetSize",
+                    "widgetPosition",
+                    "share",
+                    "widgetOptions"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "string"
+            },
+            "share": {
+              "type": "boolean"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "widgets": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "description",
+            "owner",
+            "share",
+            "id",
+            "name",
+            "widgets"
+          ]
+        }
+      ]
+    },
+    "page": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "integer"
+        },
+        "size": {
+          "type": "integer"
+        },
+        "totalElements": {
+          "type": "integer"
+        },
+        "totalPages": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "number",
+        "size",
+        "totalElements",
+        "totalPages"
+      ]
+    }
+  },
+  "required": [
+    "content",
+    "page"
+  ]
+}
