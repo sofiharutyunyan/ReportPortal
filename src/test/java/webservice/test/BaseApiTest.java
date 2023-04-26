@@ -4,10 +4,13 @@ import configuration.constants.Common;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import webservice.service.DashboardControllerService;
 
 import static io.restassured.RestAssured.given;
 
 public class BaseApiTest {
+
+    protected final DashboardControllerService service = new DashboardControllerService();
     
     protected BaseApiTest(){
         RestAssured.baseURI = "http://localhost:8080/";

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="API testing">
+<suite name="API testing" parallel = "classes" thread-count="2">
     <test name="API tests">
         <classes>
-            <class name="webservice.test.DashboardControllerTests"/>
+            <class name="webservice.test.TestNgDashboardControllerTests"/>
         </classes>
     </test>
-    <test name="UI testing">
-        <classes></classes>
-    </test>
-
 </suite>
