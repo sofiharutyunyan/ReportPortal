@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682011419765</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng">
+      <created>1682509535966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682509535966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +232,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add all necessary libraries which are going to be used" />
     <MESSAGE value="Comment update dependency graph command in maven.yml file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment update dependency graph command in maven.yml file." />
+    <MESSAGE value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
   </component>
 </project>
