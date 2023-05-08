@@ -1,7 +1,5 @@
-package ui;
+package ui.tests;
 
 public class DashboardTests {
-
-
 
 }

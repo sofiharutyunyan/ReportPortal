@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/webservice/test/Junit5DashboardControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testngWithMethodParralelization.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/CucumberRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/service/DashboardControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/service/DashboardControllerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/test/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/test/BaseApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/test/DashboardControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/test/TestNgDashboardControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testngWithClassParralelization.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/DashboardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/DashboardTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="taf_from_scratch" />
+        <entry key="$PROJECT_DIR$" value="add_testcases_with_different_test_runners" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +55,12 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sofi_Harutyunyan/Documents/mentoring/RPAutomation/src/test/resources&quot;
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Sofi_Harutyunyan/Documents/mentoring/RPAutomation/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
@@ -75,34 +82,41 @@
       <recent name="ui" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNgDashboardControllerTests">
-    <configuration name="Junit5DashboardControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: dashboard">
+    <configuration name="Feature: dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="RPAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: dashboard" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.Junit5DashboardControllerTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Junit5DashboardControllerTests.verifyCreateDashboardSucceed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create a dashboard and make sure it is added in the dashboards list" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
+      <option name="GLUE" value="ui.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="RPAutomation" />
+      <option name="NAME_FILTER" value="^Create a dashboard and make sure it is added in the dashboards list$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create a dashboard and make sure it is added in the dashboards list$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create a dashboard and make sure it is added in the dashboards list" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.Junit5DashboardControllerTests" />
-      <option name="METHOD_NAME" value="verifyCreateDashboardSucceed(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,6 +132,24 @@
       <option name="PACKAGE_NAME" value="webservice.test" />
       <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNgDashboardControllerTests.verifyCreateDashboardSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
+      <option name="METHOD_NAME" value="verifyCreateDashboardSucceed" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -142,31 +174,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNgDashboardControllerTests.verifyGetSharedDashboardsStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RPAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
-      <option name="METHOD_NAME" value="verifyGetSharedDashboardsStatusCode" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestNgDashboardControllerTests" />
-        <item itemvalue="JUnit.Junit5DashboardControllerTests" />
-        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetSharedDashboardsStatusCode" />
+        <item itemvalue="Cucumber Java.Feature: dashboard" />
         <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
-        <item itemvalue="JUnit.Junit5DashboardControllerTests.verifyCreateDashboardSucceed" />
+        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyCreateDashboardSucceed" />
+        <item itemvalue="Cucumber Java.Scenario: Create a dashboard and make sure it is added in the dashboards list" />
+        <item itemvalue="TestNG.TestNgDashboardControllerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682509535966</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add workspace.xml file in gitignore file">
+      <created>1682608258224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682608258224</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +254,24 @@
     <MESSAGE value="Add all necessary libraries which are going to be used" />
     <MESSAGE value="Comment update dependency graph command in maven.yml file." />
     <MESSAGE value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
+    <MESSAGE value="Add workspace.xml file in gitignore file" />
+    <MESSAGE value="Add Cucumber library and the first testcase of creating a new dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cucumber library and the first testcase of creating a new dashboard" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/webservice/test/TestNgDashboardControllerTests.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/webservice/test/TestNgDashboardControllerTests.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
