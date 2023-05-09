@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/CucumberRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/DashboardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/DashboardTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,19 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNgDashboardControllerTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Make Dashboards Shared" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
+      <option name="GLUE" value="ui.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="RPAutomation" />
+      <option name="NAME_FILTER" value="^Make Dashboards Shared$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Make Dashboards Shared$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Make Dashboards Shared" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,10 +174,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: dashboard" />
+        <item itemvalue="Cucumber Java.Scenario: Make Dashboards Shared" />
         <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
         <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyCreateDashboardSucceed" />
         <item itemvalue="Cucumber Java.Scenario: Create a dashboard and make sure it is added in the dashboards list" />
-        <item itemvalue="TestNG.TestNgDashboardControllerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682608258224</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Cucumber library and the first testcase of creating a new dashboard">
+      <created>1683551446375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683551446375</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +274,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/webservice/test/TestNgDashboardControllerTests.java</url>
           <line>29</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
