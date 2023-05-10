@@ -265,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683631671807</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add testcase of deleting a Dashboard">
+      <created>1683716250684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683716250684</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove unnecessary file&#10;Add configs for parallel running">
+      <created>1683720489599</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683720489599</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,7 +302,8 @@
     <MESSAGE value="Add Cucumber library and the first testcase of creating a new dashboard" />
     <MESSAGE value="Add testcase of Editing an existing dashboard's status" />
     <MESSAGE value="Add testcase of deleting a Dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add testcase of deleting a Dashboard" />
+    <MESSAGE value="Remove unnecessary file&#10;Add configs for parallel running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary file&#10;Add configs for parallel running" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
