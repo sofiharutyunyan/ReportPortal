@@ -7,6 +7,7 @@
     <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" afterDir="false" />
@@ -83,7 +84,9 @@
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="RPAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Feature: dashboard" />
+      <option name="VM_PARAMETERS" value="-Dselenide.timeout=60000" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,15 +98,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Create a dashboard and make sure it is added in the dashboards list" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Clear dashboard list" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
       <option name="GLUE" value="ui.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="RPAutomation" />
-      <option name="NAME_FILTER" value="^Create a dashboard and make sure it is added in the dashboards list$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create a dashboard and make sure it is added in the dashboards list$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Create a dashboard and make sure it is added in the dashboards list" />
+      <option name="NAME_FILTER" value="^Clear dashboard list$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Clear dashboard list$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Clear dashboard list" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Delete dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
+      <option name="GLUE" value="ui.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="RPAutomation" />
+      <option name="NAME_FILTER" value="^Delete dashboard$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Delete dashboard$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Delete dashboard" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -135,24 +158,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNgDashboardControllerTests.verifyCreateDashboardSucceed" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RPAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
-      <option name="METHOD_NAME" value="verifyCreateDashboardSucceed" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RPAutomation" />
       <extension name="coverage">
@@ -171,13 +176,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Clear dashboard list" />
+      <item itemvalue="Cucumber Java.Feature: dashboard" />
+      <item itemvalue="Cucumber Java.Scenario: Delete dashboard" />
+      <item itemvalue="Cucumber Java.Scenario: Make Dashboards Shared" />
+      <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: dashboard" />
+        <item itemvalue="Cucumber Java.Scenario: Clear dashboard list" />
+        <item itemvalue="Cucumber Java.Scenario: Delete dashboard" />
         <item itemvalue="Cucumber Java.Scenario: Make Dashboards Shared" />
         <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
-        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyCreateDashboardSucceed" />
-        <item itemvalue="Cucumber Java.Scenario: Create a dashboard and make sure it is added in the dashboards list" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +251,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683551446375</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add testcase of Editing an existing dashboard's status">
+      <created>1683631655349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683631655349</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add testcase of Editing an existing dashboard's status">
+      <created>1683631671807</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683631671807</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +286,9 @@
     <MESSAGE value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
     <MESSAGE value="Add workspace.xml file in gitignore file" />
     <MESSAGE value="Add Cucumber library and the first testcase of creating a new dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cucumber library and the first testcase of creating a new dashboard" />
+    <MESSAGE value="Add testcase of Editing an existing dashboard's status" />
+    <MESSAGE value="Add testcase of deleting a Dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add testcase of deleting a Dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -277,15 +305,35 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="13" />
+          <line>90</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="14" />
+          <line>83</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="dashboardPage.deleteIconsOfDashboards.size()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

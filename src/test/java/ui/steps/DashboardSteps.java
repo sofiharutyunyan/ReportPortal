@@ -9,13 +9,18 @@ import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import pojo.api.Content;
 import pojo.ui.DashboardPage;
+
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.back;
 
 public class DashboardSteps {
 
     private final DashboardPage dashboardPage = new DashboardPage();
-    private DashboardData dashboardData = new DashboardData();
+    private final DashboardData dashboardData = new DashboardData();
     private final DashboardService service = new DashboardService();
     private List<Content> dashboardList = new ArrayList<>();
 
@@ -37,7 +42,12 @@ public class DashboardSteps {
 
     @And("User clicks on \"Add\" button")
     public void userClicksOnAddButton() {
-        dashboardPage.addButton.click();
+        dashboardPage.addOrUpdateButton.click();
+    }
+
+    @And("Go back")
+    public void goBack() {
+        back();
     }
 
     @Then("The dashboard is created")
@@ -55,10 +65,11 @@ public class DashboardSteps {
 
     @When("User clicks on Edit Dashboard button")
     public void userEditDashboard() {
-        if (dashboardPage.editButtonsOfDashboards.size() > 0){
-            dashboardPage.editButtonsOfDashboards.get(0).click();
+        dashboardPage.dashboardFirstItem.should(visible, Duration.ofSeconds(10));
+        for (int i = 0; i < dashboardPage.editButtonsOfDashboards.size(); i++) {
+            dashboardPage.editButtonsOfDashboards.get(i).click();
             dashboardPage.shareSwitcher.click();
-            dashboardPage.updateButton.click();
+            dashboardPage.addOrUpdateButton.click();
         }
     }
 
@@ -68,5 +79,23 @@ public class DashboardSteps {
         Assertions.assertTrue(dashboardList.get(0).isShare());
     }
 
+    @When("User clicks on delete dashboard Icon")
+    public void user_clicks_on_delete_dashboard_icon() {
+        dashboardPage.dashboardFirstItem.should(visible, Duration.ofSeconds(10));
+        dashboardPage.deleteIconsOfDashboards.get(dashboardPage.deleteIconsOfDashboards.size() - 1).click();
+        dashboardPage.deleteButton.click();
+    }
 
+    @Then("Dashboard is deleted from dashboard list")
+    public void dashboard_list_becomes_empty() {
+        dashboardList = service.getDashboardList();
+        boolean foundInList = true;
+        for (Content content : dashboardList) {
+            if (!content.getName().equals(dashboardData.getName())) {
+                foundInList = false;
+                break;
+            }
+        }
+        Assertions.assertFalse(foundInList);
+    }
 }
