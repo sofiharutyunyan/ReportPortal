@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import pojo.api.Content;
-import pojo.ui.DashboardPage;
+import pages.ui.DashboardPage;
 
 import java.time.Duration;
 import java.util.ArrayList;

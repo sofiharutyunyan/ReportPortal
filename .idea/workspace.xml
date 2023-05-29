@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ui/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pojo/ui/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ui/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/CucumberRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/steps/DashboardSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <recent name="ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: dashboard">
+  <component name="RunManager" selected="JUnit.CucumberRunner">
     <configuration name="Feature: dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/dashboard.feature" />
@@ -158,20 +159,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RPAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webservice.test.*" />
+          <option name="PATTERN" value="runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="webservice.test" />
-      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
-      <option name="METHOD_NAME" value="verifyGetAllDashboardsStatusCode" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.CucumberRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,15 +179,15 @@
       <item itemvalue="Cucumber Java.Feature: dashboard" />
       <item itemvalue="Cucumber Java.Scenario: Delete dashboard" />
       <item itemvalue="Cucumber Java.Scenario: Make Dashboards Shared" />
-      <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
+      <item itemvalue="JUnit.CucumberRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CucumberRunner" />
         <item itemvalue="Cucumber Java.Feature: dashboard" />
         <item itemvalue="Cucumber Java.Scenario: Clear dashboard list" />
         <item itemvalue="Cucumber Java.Scenario: Delete dashboard" />
         <item itemvalue="Cucumber Java.Scenario: Make Dashboards Shared" />
-        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683720489599</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Remove unnecessary file&#10;Add configs for parallel running">
+      <created>1683721623988</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683721623988</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

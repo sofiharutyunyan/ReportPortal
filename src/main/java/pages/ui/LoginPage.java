@@ -1,4 +1,4 @@
-package pojo.ui;
+package pages.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;

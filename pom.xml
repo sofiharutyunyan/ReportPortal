@@ -63,7 +63,7 @@
                         </goals>
                         <configuration>
                             <includes>
-                                <include>**runner/CucumberRunner.class</include>
+                                <include>runner/CucumberRunner.class</include>
                             </includes>
                             <parallel>methods</parallel>
                             <threadCount>3</threadCount>
