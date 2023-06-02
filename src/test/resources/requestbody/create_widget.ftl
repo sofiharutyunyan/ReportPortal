@@ -8,7 +8,7 @@
   },
   "description": "string",
   "filterIds": [
-    1
+    0
   ],
   "name": "${name}",
   "share": ${share?c},

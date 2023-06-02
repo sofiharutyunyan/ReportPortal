@@ -3,7 +3,7 @@
 <suite name="API testing" parallel = "classes" thread-count="2">
     <test name="API tests">
         <classes>
-            <class name="webservice.test.TestNgDashboardControllerTests"/>
+            <class name="webservice.test.resassured.TestNgDashboardControllerTests"/>
         </classes>
     </test>
 </suite>
