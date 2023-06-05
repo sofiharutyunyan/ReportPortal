@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="" />
+    <list default="true" id="b94d774d-6e1d-4258-99a1-148b8995460e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/webservice/test/Junit5DashboardControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testngWithMethodParralelization.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/service/DashboardControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/service/DashboardControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/test/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/test/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webservice/test/DashboardControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webservice/test/TestNgDashboardControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testngWithClassParralelization.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="taf_from_scratch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,24 +49,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Sofi_Harutyunyan/Documents/mentoring/RPAutomation/src/test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sofi_Harutyunyan/Documents/mentoring/RPAutomation/src/test/resources&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src\test" />
       <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src\test\resources" />
+      <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src\test" />
       <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src" />
       <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src\main" />
       <recent name="C:\Users\Sofi_Harutyunyan\Documents\mentoring\RPAutomation\src\test\java\webservice" />
@@ -64,6 +74,101 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ui" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestNgDashboardControllerTests">
+    <configuration name="Junit5DashboardControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.Junit5DashboardControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Junit5DashboardControllerTests.verifyCreateDashboardSucceed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.Junit5DashboardControllerTests" />
+      <option name="METHOD_NAME" value="verifyCreateDashboardSucceed(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNgDashboardControllerTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
+      <option name="METHOD_NAME" value="verifyGetAllDashboardsStatusCode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNgDashboardControllerTests.verifyGetSharedDashboardsStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RPAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webservice.test" />
+      <option name="MAIN_CLASS_NAME" value="webservice.test.TestNgDashboardControllerTests" />
+      <option name="METHOD_NAME" value="verifyGetSharedDashboardsStatusCode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestNgDashboardControllerTests" />
+        <item itemvalue="JUnit.Junit5DashboardControllerTests" />
+        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetSharedDashboardsStatusCode" />
+        <item itemvalue="TestNG.TestNgDashboardControllerTests.verifyGetAllDashboardsStatusCode" />
+        <item itemvalue="JUnit.Junit5DashboardControllerTests.verifyCreateDashboardSucceed" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681302864250</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Comment update dependency graph command in maven.yml file.">
+      <created>1682011419765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682011419765</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng">
+      <created>1682509535966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682509535966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +231,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add all necessary libraries which are going to be used" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all necessary libraries which are going to be used" />
+    <MESSAGE value="Comment update dependency graph command in maven.yml file." />
+    <MESSAGE value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add API testcases with testng and junit5&#10;The testcase of creation a dashboard is parametrised.&#10;Added logic for parallel running for both junit and testng" />
   </component>
 </project>
