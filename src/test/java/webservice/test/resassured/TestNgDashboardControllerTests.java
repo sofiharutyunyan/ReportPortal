@@ -1,32 +1,22 @@
-package webservice.test;
+package webservice.test.resassured;
 
 import io.restassured.response.Response;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import pojo.api.Content;
 import pojo.api.Dashboards;
 import utils.JsonSchemaValidatorUtils;
 
-import static configuration.constants.paths.JsonSchemeValidatorPaths.*;
-import static org.junit.jupiter.params.provider.Arguments.arguments;
-
 import java.util.List;
-import java.util.stream.Stream;
 
-import static configuration.constants.Endpoints.*;
-import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+import static configuration.constants.Endpoints.GET_ALL_SHARED_DASHBOARDS;
+import static configuration.constants.paths.JsonSchemeValidatorPaths.*;
 
-@Execution(CONCURRENT)
-public class Junit5DashboardControllerTests extends BaseApiTest{
+public class TestNgDashboardControllerTests extends BaseApiTest {
 
-    @ParameterizedTest
-    @DisplayName("Create new Dashboard")
-    @MethodSource("testData")
+
+    @Test(dataProvider = "testData")
     public void verifyCreateDashboardSucceed(String dashboardName) {
         String body = service.generateRequestBodyForCreationOfDashboard(dashboardName);
         Response createDashboardResponse = sendPostRequest(body, "/dashboard");
@@ -34,7 +24,14 @@ public class Junit5DashboardControllerTests extends BaseApiTest{
         JsonSchemaValidatorUtils.validateResponseUsingJsonSchema(createDashboardResponse, CREATE_DASHBOARD_RESPONSE_SCHEME_VALIDATOR_PATH);
     }
 
-    @DisplayName("Verify that Get all dashboard response code is Succeed")
+    @Test
+    public void verifyGetAllDashboardsStatusCode() {
+        Response allDashboardsResponse = sendGetRequest("/dashboard");
+        allDashboardsResponse.then().statusCode(200);
+        allDashboardsResponse.prettyPrint();
+        JsonSchemaValidatorUtils.validateResponseUsingJsonSchema(allDashboardsResponse, GET_ALL_DASHBOARDS_SCHEME_VALIDATOR_PATH);
+    }
+
     @Test
     public void verifyGetSharedDashboardsStatusCode() {
         Response allSharedDashboardsResponse = sendGetRequest("/dashboard/shared");
@@ -42,7 +39,6 @@ public class Junit5DashboardControllerTests extends BaseApiTest{
         JsonSchemaValidatorUtils.validateResponseUsingJsonSchema(allSharedDashboardsResponse, GET_ALL_SHARED_DASHBOARDS_SCHEME_VALIDATOR_PATH);
     }
 
-    @DisplayName("Verify that all returned dashboards are shared")
     @Test
     public void verifyAllReturnedDashboardsAreShared() {
         Response allSharedDashboardsResponse = sendGetRequest(GET_ALL_SHARED_DASHBOARDS);
@@ -55,13 +51,8 @@ public class Junit5DashboardControllerTests extends BaseApiTest{
         }
     }
 
-    private static Stream<Arguments> testData(){
-        return Stream.of(
-                arguments("Junit5 Demo1"),
-                arguments("Junit5 Demo2"),
-                arguments("Junit5 Demo3"),
-                arguments("Junit5 Demo4"),
-                arguments("Junit5 Demo5")
-        );
+    @DataProvider(name = "testData")
+    private Object[][] testData() {
+        return new Object[][]{{"TestNG Dash 1"}, {"TestNG Dash 2"}, {"TestNG Dash 3"}, {"TestNG Dash 4"}, {"TestNG Dash 5"}};
     }
 }

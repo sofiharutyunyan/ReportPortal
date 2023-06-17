@@ -1,4 +1,4 @@
-package webservice.test;
+package webservice.test.resassured;
 
 import configuration.constants.Common;
 import io.restassured.RestAssured;
@@ -11,13 +11,13 @@ import static io.restassured.RestAssured.given;
 public class BaseApiTest {
 
     protected final DashboardControllerService service = new DashboardControllerService();
-    
-    protected BaseApiTest(){
+
+    protected BaseApiTest() {
         RestAssured.baseURI = "http://localhost:8080/";
         RestAssured.basePath = "api/v1/" + Common.PROJECT_NAME;
     }
 
-    public Response sendPostRequest(String body, String endpoint){
+    public Response sendPostRequest(String body, String endpoint) {
         return given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer 5fd11cb8-a370-4c7c-b8d4-1e9f09f4c0b9")
@@ -26,14 +26,15 @@ public class BaseApiTest {
                 .post(endpoint);
     }
 
-    public Response sendGetRequest(String endpoint){
+    public Response sendGetRequest(String endpoint) {
         return given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer 5fd11cb8-a370-4c7c-b8d4-1e9f09f4c0b9")
                 .when()
                 .get(endpoint);
     }
-    public Response sendPutRequest(String endpoint, String body){
+
+    public Response sendPutRequest(String endpoint, String body) {
         return given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer 5fd11cb8-a370-4c7c-b8d4-1e9f09f4c0b9")
@@ -42,7 +43,7 @@ public class BaseApiTest {
                 .put(endpoint);
     }
 
-    public Response sendDeleteRequest(String endpoint){
+    public Response sendDeleteRequest(String endpoint) {
         return given()
                 .contentType(ContentType.JSON)
                 .header("Authorization", "Bearer 5fd11cb8-a370-4c7c-b8d4-1e9f09f4c0b9")
