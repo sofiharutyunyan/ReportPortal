@@ -11,6 +11,6 @@ import static io.cucumber.core.options.Constants.GLUE_PROPERTY_NAME;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("src/test/resources/features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "src.test.java.ui.steps")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "src.test.java.ui.selenide.steps")
 public class CucumberRunner {
 }

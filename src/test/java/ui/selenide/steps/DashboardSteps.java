@@ -1,4 +1,4 @@
-package ui.steps;
+package ui.selenide.steps;
 
 import com.codeborne.selenide.Selenide;
 import dataholder.DashboardData;

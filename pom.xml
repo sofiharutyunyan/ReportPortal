@@ -25,6 +25,7 @@
         <junit-jupiter-params>5.9.2</junit-jupiter-params>
         <cucumber.version>7.11.2</cucumber.version>
         <junit-platform-suite-api>1.9.3</junit-platform-suite-api>
+        <selenium.version>4.10.0</selenium.version>
     </properties>
 
     <build>
@@ -156,6 +157,11 @@
             <artifactId>cucumber-junit-platform-engine</artifactId>
             <version>${cucumber.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
         </dependency>
     </dependencies>
 
