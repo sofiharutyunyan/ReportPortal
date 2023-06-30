@@ -1,4 +1,4 @@
-package ui.steps;
+package ui.selenide.steps;
 
 import configuration.constants.Common;
 import io.restassured.RestAssured;

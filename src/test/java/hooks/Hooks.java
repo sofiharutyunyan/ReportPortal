@@ -15,12 +15,13 @@ public class Hooks {
         Configuration.timeout = 10000;
         loginPage = new LoginPage();
         loginPage.loginWithSuperadminCreds();
+        Configuration.browser = System.getProperty("browser", "chrome");
     }
 
     @After
     public static void tearDown(Scenario scenario) {
         if (scenario.isFailed()){
-//            TODO take screenshot and proper logs
+            throw new AssertionError("Scenario \""+scenario.getName()+"\"" + "failed: condition not met");
         }
         loginPage.logout();
     }

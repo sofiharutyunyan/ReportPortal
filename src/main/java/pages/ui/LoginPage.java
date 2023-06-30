@@ -28,7 +28,6 @@ public class LoginPage {
     }
 
     public void logout() {
-
         WebDriverWait wait = new WebDriverWait(WebDriverRunner.getWebDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(userAvatar));
         userAvatar.click();
