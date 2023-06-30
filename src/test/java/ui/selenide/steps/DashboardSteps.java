@@ -1,11 +1,13 @@
 package ui.selenide.steps;
 
 import com.codeborne.selenide.Selenide;
+import configuration.logger.LoggerFactory;
 import dataholder.DashboardData;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import pojo.api.Content;
 import pages.ui.DashboardPage;
@@ -18,6 +20,8 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.back;
 
 public class DashboardSteps {
+
+    private final Logger logger = LoggerFactory.getLogger();
 
     private final DashboardPage dashboardPage = new DashboardPage();
     private final DashboardData dashboardData = new DashboardData();
@@ -32,12 +36,14 @@ public class DashboardSteps {
     @When("User clicks on Create new Dashboard button")
     public void user_clicks_on_create_new_dashboard_button() {
         dashboardPage.btnCreateNewDashboard.click();
+        logger.info("Dashboard is created successfully");
     }
 
     @And("User sets dashboard {string}")
-    public void user_sets_dashboard_demo1(String name) {
+    public void user_sets_dashboard(String name) {
         dashboardPage.newDashboardName.sendKeys(name);
         dashboardData.setName(name);
+        logger.info("Dashboard name is set as " + name);
     }
 
     @And("User clicks on \"Add\" button")
@@ -60,7 +66,7 @@ public class DashboardSteps {
                 break;
             }
         }
-        Assertions.assertTrue(foundInList);
+        Assertions.assertTrue(foundInList, "The dashboard is not created successfully");
     }
 
     @When("User clicks on Edit Dashboard button")
@@ -77,6 +83,7 @@ public class DashboardSteps {
     public void the_dashboard_become_shared() {
         dashboardList = service.getDashboardList();
         Assertions.assertTrue(dashboardList.get(0).isShare());
+        logger.info("All the available dashboards are made as shared");
     }
 
     @When("User clicks on delete dashboard Icon")
@@ -97,5 +104,6 @@ public class DashboardSteps {
             }
         }
         Assertions.assertFalse(foundInList);
+        logger.info("Dashboard is deleted successfully");
     }
 }

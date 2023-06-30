@@ -19,6 +19,9 @@ public class Hooks {
 
     @After
     public static void tearDown(Scenario scenario) {
+        if (scenario.isFailed()){
+            throw new AssertionError("Scenario \""+scenario.getName()+"\"" + "failed: condition not met");
+        }
         loginPage.logout();
     }
 }
