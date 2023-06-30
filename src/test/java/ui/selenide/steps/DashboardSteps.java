@@ -1,6 +1,8 @@
 package ui.selenide.steps;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import configuration.logger.LoggerFactory;
 import dataholder.DashboardData;
 import io.cucumber.java.en.And;
@@ -9,6 +11,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import pojo.api.Content;
 import pages.ui.DashboardPage;
 
@@ -20,6 +24,9 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.back;
 
 public class DashboardSteps {
+
+    WebDriver driver = WebDriverRunner.getWebDriver();
+    JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
     private final Logger logger = LoggerFactory.getLogger();
 
@@ -105,5 +112,22 @@ public class DashboardSteps {
         }
         Assertions.assertFalse(foundInList);
         logger.info("Dashboard is deleted successfully");
+    }
+
+    @When("User Scrolls page")
+    public void user_scrolls_page() {
+
+        boolean isElementScrolledIntoView = (boolean) jsExecutor.executeScript(
+                "var element = arguments[0];" +
+                        "var rect = element.getBoundingClientRect();" +
+                        "return (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight));",
+                dashboardPage.btnCreateNewDashboard);
+        Assertions.assertTrue(isElementScrolledIntoView);
+    }
+
+    @Then("User clicks on Create new Dashboard with JS")
+    public void user_clicks_on_create_new_dashboard_with_js() {
+        jsExecutor.executeScript("arguments[0].click();", dashboardPage.btnCreateNewDashboard);
+        jsExecutor.executeScript("arguments[0].click();", dashboardPage.btnCancel);
     }
 }
