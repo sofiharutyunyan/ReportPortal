@@ -19,9 +19,6 @@ public class Hooks {
 
     @After
     public static void tearDown(Scenario scenario) {
-        if (scenario.isFailed()){
-//            TODO take screenshot and proper logs
-        }
         loginPage.logout();
     }
 }
