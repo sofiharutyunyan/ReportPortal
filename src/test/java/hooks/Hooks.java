@@ -15,6 +15,7 @@ public class Hooks {
         Configuration.timeout = 10000;
         loginPage = new LoginPage();
         loginPage.loginWithSuperadminCreds();
+        Configuration.browser = System.getProperty("browser", "chrome");
     }
 
     @After
